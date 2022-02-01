@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes internas</title>
+    <style>
+        @font-face {
+            font-family: 'Cardinala';
+            src: url('Cardinal.ttf') format('opentype'), url('Cardinal-alternative.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+                Tipos de Format()
+                - opentype(otf)
+                - truetyoe (ttf)
+                - embedded-opentype
+                - truetype-aat (apple advanced Typography)
+                - Svg 
+            */
+        }
+        body{
+            font-family: 'Cardinala', Helvetica, sans-serif;
+            font-size: 4em;
+        }
+        h1{
+            font-family: 'Cardinala','Times';
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias repellendus molestiae, nam numquam fugiat quis, quod ex repudiandae magni provident quam quidem odit alias? Fuga saepe nobis accusantium illo.</p>
+    
+</body>
+</html>

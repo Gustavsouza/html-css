@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de caixas</title>
+    <link rel="shortcut icon" href="https://avowhcbwko.cloudimg.io/v7/https://empreender.nyc3.digitaloceanspaces.com/grupowhats/90260b36bc51b44ff658ddb7c7673703?w=400&org_if_sml=1" type="image/x-icon"> 
+    <style>
+        body{
+            background-color: bisque;
+        }
+        #titulo{
+            background-color:red;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            margin-top: 1px;
+            margin-bottom: 10px;
+            text-align: center;
+            padding-top: 8px;
+            box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.411);
+        }
+        nav > a{
+            text-decoration: none;
+            color: red;
+            font-weight: bolder;
+            font-style: oblique;
+            margin-left: auto;
+            margin-right: auto; 
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        nav{
+            background-color: khaki;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            padding: 5px;
+            text-align:center;
+            box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.411);
+        }
+        header{
+            background-color: rgba(214, 171, 117, 0.705);
+            padding-top: 5px;
+            padding-left: auto;
+            padding-bottom: 10px;
+            padding-right: auto;
+        }
+        h1{
+            /*background-color: rgb(180, 161, 136);*/
+            margin-top: 5px;
+        }
+        aside{
+            font-weight: 600;
+        }
+        article{
+            background-color: rgb(240, 132, 9);
+            margin-top: 10px;
+            padding-top: 3px;
+            padding-right: 8px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            border-radius: 3px;
+        }
+        footer > p{
+            background-color: rgba(201, 148, 84, 0.842);
+            color: cadetblue;
+            text-align: center;
+            margin-left:auto;
+            margin-right: auto;
+            width: 300px;
+            font-weight: 800;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin-top: 10px;
+            box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.411);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER = CABEÇALHO-->
+    <header>
+        <h1 id="titulo">NOTICIÁRIO DO DIA</h1>
+        <!--NAV = NAVEGAÇÃO, ou seja MENUS! -->
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <!-- MAIN = CORPO PRINCIPAL-->
+    <main>
+        <!-- SECTION = SESSÕES-->
+        <section id="NoticiasEsportes">
+            <article>
+            <h1>Flamengo campeão carioca</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia labore adipisci eveniet nobis temporibus. Rerum aperiam omnis alias doloribus voluptate distinctio nobis, animi explicabo, neque accusantium placeat laboriosam, autem velit.</p>
+                <aside>
+                    <!-- Dá para colocar o autor aqui no aside-->
+                    Por: G1/esportes 
+                </aside>
+            </article>
+        </section>
+        <section id="NoticiasPolitica">
+              <!-- ARTICLE = NESSE EXEMPLO, CADA NOTICIA É UM ARTICLE-->
+              <article>
+                  <h1>Lula ladrão</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non minus libero. Pariatur, tenetur placeat praesentium ducimus vitae doloribus sit velit! Soluta quidem nam ipsa vel omnis. Enim, sed saepe.</p>
+                  <!-- ASIDE = NESTE CASO, É ALGO RELACIONADO AO ARTIGO(ARTICLE), NESSE CASO VOU COLOCAR O AUTOR DA CONDENAÇÃO-->
+                  <aside>Condenado por Sérgio Moro</aside>
+              </article>
+              <article>
+                  <h1>Lava jato cancelada</h1>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo maiores inventore eveniet quod laborum consectetur adipisci voluptates dolor voluptatum quos laudantium nesciunt, blanditiis at quisquam soluta sapiente vitae velit commodi.</p>
+                  <aside> Bolsonaro, canelou a mesma.</aside>
+              </article>
+            
+        </section>
+
+    </main>
+
+    <!--RODAPÉ-->
+    <footer>
+        <p>Desenvolvido pelo Gustav T.I </p>
+    </footer>
+
+
+</body>
+</html>
