@@ -8,15 +8,23 @@
     <style>
         body{
             height: 99vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* shothand - background  
+            ordem correta: color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size:cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border-radius: 14px ;
