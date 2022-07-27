@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NumeroPrimo?</title>
+    <style>
+        div#principal{
+            margin:auto;
+            width: auto;
+            box-shadow: 5px 5px 10px rgba(250, 6, 6, 0.034);
+            text-align: center;
+            height: 160px;
+            padding-top: 10px;
+            transition-duration: 3s;
+        }
+        div#principal:hover{
+            margin:auto;
+            width: auto;
+            box-shadow: 5px 5px 10px rgba(250, 6, 6, 0.034);
+            text-align: center;
+            height: 160px;
+            padding-top: 10px;
+            background-color: rgba(0, 255, 255, 0.37);
+            transition-duration: 3s;
+        }
+    </style>
 </head>
 <body>
+    <div id="principal">
         <h1>Número é primo?</h1>
         <input type="number" name="numero" id="numero">
         <button onclick="Nprimo()">Clique aqui</button>
@@ -27,5 +49,6 @@
 
     }
         </script>
+    </div>
 </body>
 </html>
