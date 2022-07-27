@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumeroPrimo?</title>
+</head>
+<body>
+        <h1>Número é primo?</h1>
+        <input type="number" name="numero" id="numero">
+        <button onclick="Nprimo()">Clique aqui</button>
+        <script>
+            function Nprimo(){
+                contador = 0
+                var numero = document.getElementById("numero").value;
+                  for(var i = 0; i < numero; i++){
+                        if(numero%i == 0){
+                            contador = contador +1
+                        }  
+                    }   
+                    if(contador < 2){
+                        alert("Número primo")
+                    }else{
+                        alert("Número não primo")
+                    }
+
+    }
+        </script>
+</body>
+</html>
