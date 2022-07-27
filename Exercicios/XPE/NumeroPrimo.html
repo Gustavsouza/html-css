@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NumeroPrimo?</title>
     <style>
-        div#principal{
+        div#principal,#div2{
             margin:auto;
             width: auto;
             box-shadow: 5px 5px 10px rgba(250, 6, 6, 0.034);
             text-align: center;
             height: 160px;
             padding-top: 10px;
-            transition-duration: 3s;
+            transition-duration: 1s;
         }
         div#principal:hover{
             margin:auto;
@@ -23,14 +23,14 @@
             height: 160px;
             padding-top: 10px;
             background-color: rgba(0, 255, 255, 0.37);
-            transition-duration: 3s;
+            transition-duration: 1.5s;
         }
     </style>
 </head>
 <body>
     <div id="principal">
         <h1>Número é primo?</h1>
-        <input type="number" name="numero" id="numero">
+        <input type="number" name="numero" id="numero" placeholder="Insira um número" onkeyup="Nprimo()">
         <button onclick="Nprimo()">Clique aqui</button>
         <script>
             function Nprimo(){
@@ -41,14 +41,18 @@
                             contador = contador +1
                         }  
                     }   
-                    if(contador < 2){
-                        alert("Número primo")
+                    if(contador <= 2){
+                       //var texto = document.getElementById('div2')
+                       div2.innerHTML = 'É primo'
                     }else{
-                        alert("Número não primo")
+                        div2.innerHTML = 'Não é primo'
                     }
 
     }
         </script>
+    </div>
+    <div id="div2">
+
     </div>
 </body>
 </html>
